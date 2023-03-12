@@ -1,12 +1,12 @@
 name: Gh-Pages
 
 on:
-push:
-branches: [master]
+  push:
+    branches: [master]
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2 # Only works with v2
@@ -14,4 +14,4 @@ runs-on: ubuntu-latest
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           webRenderer: html
-          baseHref: /merried_me.github.io/
+          baseHref: /elvissalabarria_portfolio/
